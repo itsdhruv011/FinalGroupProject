@@ -1,0 +1,197 @@
+/* Global reset: Resetting margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling: Setting font family, full height, and flex container properties */
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Main container styling: Flex properties for main content */
+main {
+  flex: 1;
+  display: flex;
+}
+
+/* Section styling: Flex properties, padding, and background color for the main section */
+section {
+  flex: 1;
+  padding: 1em;
+  background-color: #333;
+  display: flex;
+}
+
+/* Left and right columns styling: Width, background color, and padding for side columns */
+.left-column,
+.right-column {
+  width: 20%;
+  background-color: #555;
+  padding: 1em;
+}
+
+/* Content container styling: Flex properties and relative positioning for content */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Menu and bottom bar styling: Full width, background color, padding, and text color */
+.menu,
+.bottom {
+  width: 100%;
+  background-color: #4779ba;
+  padding: 1em;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.centerbox, textarea{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Text area styling: Flex properties, width, height, max height, border, overflow, margin, and background color */
+#text {
+  flex: 1;
+  width: 100vh;
+  height: 50vh;
+  max-height: 50vh;
+  border: 0.1em solid #666;
+  overflow-y: auto;
+  margin: auto; /* Center horizontally and vertically */
+  background-color: white;
+  resize: none;
+}
+
+/* Header styling: Background color, text color, padding, and center-aligned text */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Header paragraph styling: Top and bottom margin adjustments */
+header p:nth-child(2) {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Header paragraph styling: Bottom margin for all paragraphs except the last one */
+header p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+/* Menu styling: Full width, background color, padding, and text color */
+.menu {
+  width: 100%;
+  background-color: #4779ba;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Menu list styling: Resetting list styles, padding, margin, and flex display */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Menu item styling: Margin and relative positioning */
+.menu li {
+  margin: 0 1em;
+  position: relative;
+}
+
+/* Menu link styling: Text decoration, color, font weight, block display, and padding */
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 1em;
+}
+
+/* Menu link hover styling: Underline on hover */
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Submenu styling: Initial state, position, and background color */
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+}
+
+/* Submenu item styling: Resetting margin and preventing line breaks */
+.menu ul ul li {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Submenu display on hover: Show submenu in a column layout */
+.menu li:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu label styling */
+.menu-label {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 1em;
+}
+
+.menu-label:hover {
+  text-decoration: underline;
+}
+
+/* Menu select styling */
+.menu-select {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect on select options */
+.menu-select:hover,
+.menu-button:hover {
+  background-color: #555;
+}
+
+/* Menu button and textbox styling */
+.menu-button,
+.menu-textbox {
+  background-color: #333;
+  color: white;
+  margin: 0 auto; /* Center horizontally */
+  padding: 0.5em 1em;
+}
